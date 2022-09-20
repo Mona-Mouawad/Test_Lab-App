@@ -97,11 +97,49 @@ class _appState extends State<app> {
             ],
           ),
           appBar: AppBar(
-            title: Center(child: Text('Test APP')),
+            title:// Center(child: Text('Test APP')),
+            Row(
+              children: [
+                CircleAvatar(
+                  backgroundColor: Colors.white.withOpacity(0.1),
+                  backgroundImage: AssetImage('images/M.jpeg'),
+                  radius: 20,
+                ),
+                Spacer(),
+                Text(
+                  'محمود فتحى داود',
+                  style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+              ],
+            ),
           //  leading: Icon(Icons.menu),
             backgroundColor: Colors.deepPurple[300],
             elevation: 5,
           ),
+          bottomSheet:  Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Row(
+              children: [
+
+                Text(
+                  'By: Mona Mouawad',
+                  style: TextStyle(fontSize: 10),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Spacer(),
+                Text(
+                  'mona.mouawad21@gmail.com',
+                    style: TextStyle(fontSize: 10),
+                ),
+
+              ],
+            ),
+          ) ,
         );
       } ,
 

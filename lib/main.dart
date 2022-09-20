@@ -1,12 +1,11 @@
-import 'package:csv/csv.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:testmo/screen.dart';
 
 import 'cubit/cubit.dart';
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
